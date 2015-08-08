@@ -5,4 +5,4 @@ These tools were written hastily and poorly and were never intended for public r
 
 # Usage
 
-I would like it if you open a pull request with any changes that you have but you are not required to do so. It only makes the tool better for the people interested in using them
+I would like it if you open a pull request with any changes that you have but you are not required to do so. It only makes the tool better for the people interested in using them.
