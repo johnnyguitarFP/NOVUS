@@ -1,3 +1,8 @@
+--[[
+	This file reads through data/basedir and reads the name of the vtf files, if a vtf file is found without _n.vtf it is assumed to be a diffuse texture.
+	Once a diffuse texture is found, if a normal or _n file is found it will create a .vmt based off the template found on line 61
+--]]
+
 local olddirs = 0
 local basedir = "models/*/"
 local dirs = {basedir}
