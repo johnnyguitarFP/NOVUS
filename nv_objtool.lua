@@ -1,9 +1,17 @@
+--[[
+	This tool reads obj files that are stored in data/basedir and goes through all OBJ files and MTL files stored within that folder.
+	What then happens is it reads the texture directory and takes the name of the texture itself and assigns it as the material name.
+	The OBJ and the MTL files are put into two seperate folders. data/objtool/out/mtl/ and data/objtool/out/obj you may need to create these folders.
+	Once they are in the folders you will need to change the file extension from .txt to the name of the folder (either mtl or obj).
+	Once you reimport the OBJ and MTL file into your preferred 3d modelling program, they should have correct material names allowing for a speedy import to the source engine.
+--]]
+
 local olddirs = 0
-local basedir = "source_fallout/"
+local basedir = "source_*/"
 local dirs = {basedir}
 local MTLFiles = {}
 local materialIndex = {}
-local files = {"props_col"}
+local files = {"*"}
 
 for k, v in pairs(files) do
 	local function ProcessMTLFile(mtl)
